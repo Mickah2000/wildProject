@@ -1,0 +1,23 @@
+<!-- <div class="wrapper">
+    <form class="form" #f=ngForm method="put">
+        <input type="name" autocomplete="off" name="name" placeholder="Nom de l'Argonaute" [(ngModel)]="argonaute.name">
+        <button (click)="submit()">Inscrire</button>
+    </form>
+</div> -->
+
+<div class="center">
+  <div class="box">
+    <h2>Les Argonautes</h2>
+    <form class="form" #f=ngForm method="PUT">
+      <div class="email">
+        <input type="name" autocomplete="off" name="name" placeholder="Nom de l'Argonaute" [(ngModel)]="argonaute.name">
+      </div>
+      <button (click)="submit()">Inscrire</button>
+    </form>
+    <div class="list">
+      <ul *ngFor="let user of users">
+        <li>{{ user.name }} <i class="fas fa-user-times"></i></li>
+      </ul>
+    </div>
+  </div>
+</div>
